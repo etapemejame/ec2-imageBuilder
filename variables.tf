@@ -19,13 +19,13 @@ variable "ec2_iam_role_name" {
 variable "aws_s3_log_bucket" {
   type        = string
   description = "The S3 bucket name to send logs to."
-  default = "ec2-image-builder-logs-us-east-1-424799221050"
+  default = ""
 }
 
 variable "aws_s3_bucket" {
   type        = string
   description = "The S3 bucket name that stores the Image Builder componeent files."
-  default = "ec2-image-builder-us-east-1-424799221050"
+  default = ""
 }
 
 variable "ebs_root_vol_size" {
@@ -35,7 +35,7 @@ variable "ebs_root_vol_size" {
 
 variable "aws_key_pair_name" {
   type = string
-  default = "emma-nova"
+  default = ""
 }
 
 variable "image_receipe_version" {
@@ -45,5 +45,5 @@ variable "image_receipe_version" {
 
 variable "ami_name_tag" {
   type = string
-  default = "Kyndryl-ec2ImageBuilder"
+  default = ""
 }
